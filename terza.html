@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2022/23</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-logo">Portfolio.</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="terza.html" class="active">Terza</a>
+      <a href="quarta.html">Quarta</a>
+      <a href="quinta.html">Quinta</a>
+    </div>
+    <div class="nav-contact">
+      <a href="mailto:email@example.com" class="btn-pill">Contattami</a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" onclick="toggleMenu()">Home</a>
+    <a href="terza.html" onclick="toggleMenu()">Terza</a>
+    <a href="quarta.html" onclick="toggleMenu()">Quarta</a>
+    <a href="quinta.html" onclick="toggleMenu()">Quinta</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-label fade-in">Anno Scolastico 2022/23</div>
+    <h1 class="page-hero-title fade-in delay-1">Classe<br><em>Terza</em></h1>
+    <p class="page-hero-sub fade-in delay-2">L'anno in cui ho finalmente potuto sperimentare quelle che sono le materie per cui ho scelto questa scuola.</p>
+    <!-- Breve descrizione: "Come ho anticipato prima la terza è l'anno in cui finalmente ho potuto approfondire le materie di cui sono veramente appassionato..." -->
+  </section>
+
+  <!-- INTRO / MATERIE -->
+  <section class="page-section">
+    <div class="section-label fade-in-section">Il percorso</div>
+    <div class="two-col">
+      <div class="fade-in-section">
+        <h2>Breve descrizione del <em>terzo anno</em> al BUS.</h2>
+        <p>Come ho anticipato prima la terza è l'anno in cui finalmente ho potuto approfondire le materie di cui sono veramente appassionato, l'impegno dei primi due anni in cui ho affrontato materie non nella mia nicchia di interesse ha dato un risultato, ovvero arrivare al terzo anno.</p>
+      </div>
+      <div class="stat-stack fade-in-section delay-1">
+        <div class="stat-item">
+          <span class="stat-num">12</span>
+          <span class="stat-label">Materie studiate</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Progetti completati</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">1°</span>
+          <span class="stat-label">Anno del triennio</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATTIVITÀ -->
+  <section class="page-section alt-bg">
+    <div class="section-label fade-in-section">Attività & Progetti</div>
+    <h2 class="fade-in-section">Cosa ho fatto<br><em>quest'anno.</em></h2>
+    <div class="activity-grid">
+      <div class="activity-card fade-in-section">
+        <div class="activity-num">01</div>
+        <h3>Nonni Smart</h3>
+        <p>Insegnare e aiutare dei signori nell'apprendimento sull'utilizzo di dispositivi informatici, quali smartphone, tablet, computer e applicazioni e software di loro necessità</p>
+        <button class="details-toggle" data-detail-title="Lorem Ipsum Dolor" data-detail-description="In questa attivita ho consolidato le basi pratiche, imparando a organizzare il lavoro e rispettare le consegne in modo costante." data-detail-tech="HTML base, CSS base, strumenti di produttivita scolastica" data-detail-soft="Organizzazione, gestione del tempo, autonomia" data-detail-role="Studente in formazione" data-detail-results="Consegne completate con continuita e maggiore autonomia operativa." data-detail-reflection="Questa esperienza mi ha aiutato a costruire metodo e continuita nello studio.">Dettagli <span class="details-arrow">▾</span></button>
+      </div>
+      <div class="activity-card fade-in-section delay-1">
+        <div class="activity-num">02</div>
+        <h3>Monta smonta</h3>
+        <p>La scuola ha messo a disposizione dei computer non funzionanti per offrire a noi studenti la possibilità di imparare a smontare e poi rimontare un PC.</p>
+        <button class="details-toggle" data-detail-title="Consectetur Adipiscing" data-detail-description="Ho sviluppato maggiore precisione tecnica, lavorando su esercizi progressivi e documentando i passaggi principali." data-detail-tech="Logica di programmazione, strumenti digitali, ricerca online guidata" data-detail-soft="Precisione, ascolto attivo, collaborazione" data-detail-role="Studente collaboratore" data-detail-results="Migliore qualita degli elaborati e riduzione degli errori ricorrenti." data-detail-reflection="Ho capito che la qualita nasce dall'attenzione ai dettagli.">Dettagli <span class="details-arrow">▾</span></button>
+      </div>
+      <div class="activity-card fade-in-section delay-2">
+        <div class="activity-num">03</div>
+        <h3>UST</h3>
+        <p>Le 3e dell'informatico hanno partecipato ad una video call di gruppo con un esperto che, tramite una presentazione,  ha parlato del mondo del lavoro e delle varie opportunità.      </div>
+
+    </div>
+  </section>
+
+  <!-- MATERIE -->
+  <section class="page-section">
+    <div class="section-label fade-in-section">Materie</div>
+    <div class="subjects-list">
+      <div class="subject-row fade-in-section">
+        <span class="subject-name">Informatica</span>
+        <span class="subject-bar"><span style="width:85%"></span></span>
+      </div>
+      <div class="subject-row fade-in-section delay-1">
+        <span class="subject-name">Sistemi e reti</span>
+        <span class="subject-bar"><span style="width:70%"></span></span>
+      </div>
+      <div class="subject-row fade-in-section delay-2">
+        <span class="subject-name">Tepsit</span>
+        <span class="subject-bar"><span style="width:90%"></span></span>
+      </div>
+      <div class="subject-row fade-in-section delay-3">
+        <span class="subject-name">Telecomunicazioni</span>
+        <span class="subject-bar"><span style="width:75%"></span></span>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- RIFLESSIONE -->
+  <section class="reflection fade-in-section">
+    <blockquote>
+      "La terza è stato per me un anno molto interessante e utile, mi ha permesso di indirizzarmi meglio su ciò che avrei voluto fare una volta concluso questo percorso e sia a me che alla classe ha messo alla prova per le difficoltà riscontrate quest'anno, quindi un risultato più che positivo."
+    </blockquote>
+    <cite>— Riflessione personale, Classe Terza</cite>
+  </section>
+
+  <!-- PAGE NAV -->
+  <section class="page-nav fade-in-section">
+    <span class="page-nav-disabled">← Indietro</span>
+    <a href="quarta.html" class="btn-dark">Classe Quarta →</a>
+  </section>
+
+  <div class="details-overlay" id="detailsOverlay" aria-hidden="true">
+    <div class="details-panel" role="dialog" aria-modal="true" aria-labelledby="detailsTitle">
+      <button class="details-close" id="detailsClose" aria-label="Chiudi dettagli">×</button>
+      <h3 id="detailsTitle">Dettagli attività</h3>
+      <p id="detailsDescription"></p>
+      <div class="details-skills">
+        <div class="details-skill-block">
+          <h4>Ruolo</h4>
+          <p id="detailsRole"></p>
+        </div>
+        <div class="details-skill-block">
+          <h4>Risultati</h4>
+          <p id="detailsResults"></p>
+        </div>
+        <div class="details-skill-block">
+          <h4>Competenze tecniche</h4>
+          <p id="detailsTech"></p>
+        </div>
+        <div class="details-skill-block">
+          <h4>Competenze trasversali</h4>
+          <p id="detailsSoft"></p>
+        </div>
+        <div class="details-skill-block details-reflection-block">
+          <h4>Riflessione</h4>
+          <p id="detailsReflection"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-left">© 2025 — Tutti i diritti riservati</div>
+    <div class="footer-right">
+      <a href="#">LinkedIn</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

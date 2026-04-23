@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2023/24</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-logo">Portfolio.</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="terza.html">Terza</a>
+      <a href="quarta.html" class="active">Quarta</a>
+      <a href="quinta.html">Quinta</a>
+    </div>
+    <div class="nav-contact">
+      <a href="mailto:email@example.com" class="btn-pill">Contattami</a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" onclick="toggleMenu()">Home</a>
+    <a href="terza.html" onclick="toggleMenu()">Terza</a>
+    <a href="quarta.html" onclick="toggleMenu()">Quarta</a>
+    <a href="quinta.html" onclick="toggleMenu()">Quinta</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="page-hero-label fade-in">Anno Scolastico 2023/24</div>
+    <h1 class="page-hero-title fade-in delay-1">Classe<br><em>Quarta</em></h1>
+    <p class="page-hero-sub fade-in delay-2">L'anno di mezzo, di dubbi, di paure ma anche di scoperte e riflessioni.</p>
+  </section>
+
+  <section class="page-section">
+    <div class="section-label fade-in-section">Il percorso</div>
+    <div class="two-col">
+      <div class="fade-in-section">
+        <h2>Un anno di <em>crescita</em> e nuove sfide.</h2>
+        <p>Posso partire a descrivere quest'anno con, "WOW, non me l'aspettavo!", la quarta mi ha letteralmente travolto, sconvolto e scombussolato — personalmente l'anno più difficile soprattutto sotto un punto di vista personale, ma tra tutti finora quello che mi ha permesso di capire più cose e imparare di più.</p>
+        <p>(Parecchie volte mi è venuto in mente di mollare il BUS)</p>
+      </div>
+      <div class="stat-stack fade-in-section delay-1">
+        <div class="stat-item">
+          <span class="stat-num">152h</span>
+          <span class="stat-label">Stage in azienda</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Progetti completati</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">2°</span>
+          <span class="stat-label">Anno del triennio</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATTIVITÀ -->
+  <section class="page-section alt-bg">
+    <div class="section-label fade-in-section">Attività & Progetti</div>
+    <h2 class="fade-in-section">Cosa ho fatto<br><em>quest'anno.</em></h2>
+    <div class="activity-grid">
+      <div class="activity-card fade-in-section">
+        <div class="activity-num">01</div>
+        <h3>Confindustria - Mi presento</h3>
+        <p>Un'esperta di risorse umane ci ha istruito sulla compilazione di un curriculum e su come atteggiarci durante un colloquio di lavoro.</p>
+        <button class="details-toggle" data-detail-title="Confindustria - Mi presento" data-detail-description="Un'esperta di risorse umane ci ha istruito sulla compilazione di un curriculum e su come atteggiarci durante un colloquio di lavoro." data-detail-tech="---" data-detail-soft="---" data-detail-role="Ascoltatore" data-detail-results="---" data-detail-reflection="Molto utile soprattutto la parte in cui ci spiegava la struttura del curriculum.">Dettagli <span class="details-arrow">▾</span></button>
+      </div>
+      <div class="activity-card fade-in-section delay-1">
+        <div class="activity-num">02</div>
+        <h3>Polarity</h3>
+        <p>Due sviluppatori e imprenditori di Reggio sono venuti a parlarci dello sviluppo web frontend e backend e ci hanno presentato la loro azienda, facendo riflessione sulle opportunità future e sui più utilizzati linguaggi di programmazione nel loro ambito.</p>
+        <button class="details-toggle" data-detail-title="Polarity" data-detail-description="Due sviluppatori e imprenditori di Reggio sono venuti a parlarci dello sviluppo web frontend e backend e ci hanno presentato la loro azienda, facendo riflessione sulle opportunità future e sui più utilizzati linguaggi di programmazione nel loro ambito." data-detail-tech="---" data-detail-soft="---" data-detail-role="Ascoltatore" data-detail-results="---" data-detail-reflection="Una delle esperienze più utili e avvolgenti che abbia mai fatto, ne sono uscito migliorato e aggiornato per il futuro.">Dettagli <span class="details-arrow">▾</span></button>
+      </div>
+      <div class="activity-card fade-in-section delay-2">
+        <div class="activity-num">03</div>
+        <h3>Project work</h3>
+        <p>Tramite le conoscenze acquisite durante l'anno in Java dobbiamo progettare e programmare in team un gestionale, con indicazioni fornite dai professori in 3 settimane ed esporlo in aula magna.</p>
+        <button class="details-toggle" data-detail-title="Project work" data-detail-description="Tramite le conoscenze acquisite durante l'anno in Java dobbiamo progettare e programmare in team un gestionale, con indicazioni fornite dai professori in 3 settimane ed esporlo in aula magna." data-detail-tech="---" data-detail-soft="---" data-detail-role="---" data-detail-results="---" data-detail-reflection="---">Dettagli <span class="details-arrow">▾</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAGE -->
+  <section class="stage-section fade-in-section">
+    <div class="stage-inner">
+      <div class="stage-badge">Stage Aziendale</div>
+      <div class="stage-grid">
+        <div class="fade-in-section">
+          <h2>La mia prima esperienza<br>in <em>azienda</em>.</h2>
+          <p>La quarta è stato l'anno del mio primo contatto con il mondo del lavoro reale. Lo stage presso Mediabook S.r.l. mi ha dato la possibilità di applicare concretamente le competenze acquisite a scuola in un ambiente professionale.</p>
+        </div>
+        <div class="stage-details fade-in-section delay-1">
+          <div class="stage-detail-item">
+            <span class="stage-detail-label">Azienda</span>
+            <span class="stage-detail-value">Mediabook S.r.l. — Castelnovo di Sotto</span>
+          </div>
+          <div class="stage-detail-item">
+            <span class="stage-detail-label">Periodo</span>
+            <span class="stage-detail-value">dal 25 Maggio al 19 Giugno</span>
+          </div>
+          <div class="stage-detail-item">
+            <span class="stage-detail-label">Durata</span>
+            <span class="stage-detail-value">152 ore</span>
+          </div>
+          <div class="stage-detail-item">
+            <span class="stage-detail-label">Ruolo</span>
+            <span class="stage-detail-value">Stagista</span>
+          </div>
+          <div class="stage-detail-item">
+            <span class="stage-detail-label">Settore</span>
+            <span class="stage-detail-value">Sviluppo Web</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stage-activities">
+        <div class="stage-activity-card fade-in-section">
+          <div class="sa-icon">◈</div>
+          <h4>Servizi Web</h4>
+          <p>Progettazione e sviluppo Siti Web, programmazione Applescript e Javascript.</p>
+        </div>
+        <div class="stage-activity-card fade-in-section delay-1">
+          <div class="sa-icon">⬡</div>
+          <h4>Automazioni</h4>
+          <p>Sviluppo Software per programmi Adobe®, per automatizzare e velocizzare i flussi di lavoro e operazioni ripetitive.</p>
+        </div>
+        <div class="stage-activity-card fade-in-section delay-2">
+          <div class="sa-icon">◎</div>
+          <h4>Corsi</h4>
+          <p>Corsi di formazione per aziende o privati, tenuti da docenti Certificati Adobe®.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reflection fade-in-section">
+    <blockquote>
+      "WOW, non me l'aspettavo! La quarta mi ha letteralmente travolto, sconvolto e scombussolato — personalmente l'anno più difficile, ma anche quello che mi ha permesso di capire più cose e imparare di più."
+    </blockquote>
+    <cite>— Riflessione personale, Classe Quarta</cite>
+  </section>
+
+  <section class="page-nav fade-in-section">
+    <a href="terza.html" class="btn-outline">← Classe Terza</a>
+    <a href="quinta.html" class="btn-dark">Classe Quinta →</a>
+  </section>
+
+  <div class="details-overlay" id="detailsOverlay" aria-hidden="true">
+    <div class="details-panel" role="dialog" aria-modal="true" aria-labelledby="detailsTitle">
+      <button class="details-close" id="detailsClose" aria-label="Chiudi dettagli">×</button>
+      <h3 id="detailsTitle">Dettagli attività</h3>
+      <p id="detailsDescription"></p>
+      <div class="details-skills">
+        <div class="details-skill-block">
+          <h4>Ruolo</h4>
+          <p id="detailsRole"></p>
+        </div>
+        <div class="details-skill-block">
+          <h4>Risultati</h4>
+          <p id="detailsResults"></p>
+        </div>
+        <div class="details-skill-block">
+          <h4>Competenze tecniche</h4>
+          <p id="detailsTech"></p>
+        </div>
+        <div class="details-skill-block">
+          <h4>Competenze trasversali</h4>
+          <p id="detailsSoft"></p>
+        </div>
+        <div class="details-skill-block details-reflection-block">
+          <h4>Riflessione</h4>
+          <p id="detailsReflection"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-left">© 2025 — Tutti i diritti riservati</div>
+    <div class="footer-right">
+      <a href="#">LinkedIn</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

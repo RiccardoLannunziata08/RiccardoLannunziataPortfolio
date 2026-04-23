@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2024/25</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-logo">Portfolio.</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="terza.html">Terza</a>
+      <a href="quarta.html">Quarta</a>
+      <a href="quinta.html" class="active">Quinta</a>
+    </div>
+    <div class="nav-contact">
+      <a href="mailto:email@example.com" class="btn-pill">Contattami</a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" onclick="toggleMenu()">Home</a>
+    <a href="terza.html" onclick="toggleMenu()">Terza</a>
+    <a href="quarta.html" onclick="toggleMenu()">Quarta</a>
+    <a href="quinta.html" onclick="toggleMenu()">Quinta</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="page-hero-label fade-in">Anno Scolastico 2024/25</div>
+    <h1 class="page-hero-title fade-in delay-1">Classe<br><em>Quinta</em></h1>
+    <p class="page-hero-sub fade-in delay-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. L'anno finale, il capitolo conclusivo di un percorso straordinario.</p>
+  </section>
+
+  <section class="page-section">
+    <div class="section-label fade-in-section">Il percorso</div>
+    <div class="two-col">
+      <div class="fade-in-section">
+        <h2>L'anno della <em>maturità</em>,<br>in tutti i sensi.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+      <div class="stat-stack fade-in-section delay-1">
+        <div class="stat-item">
+          <span class="stat-num">80h</span>
+          <span class="stat-label">Stage in azienda</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">100/100</span>
+          <span class="stat-label">Obiettivo maturità</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">3°</span>
+          <span class="stat-label">Anno del triennio</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATTIVITÀ -->
+  <section class="page-section alt-bg">
+    <div class="section-label fade-in-section">Attività & Progetti</div>
+    <h2 class="fade-in-section">Il meglio<br><em>dell'anno finale.</em></h2>
+    <div class="activity-grid">
+      <div class="activity-card fade-in-section">
+        <div class="activity-num">01</div>
+        <h3>Lorem Ipsum Dolor</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <button class="details-toggle" data-detail-title="Lorem Ipsum Dolor" data-detail-description="In questa attivita ho consolidato un approccio professionale, con attenzione a obiettivi, tempi e qualita finale." data-detail-tech="Sviluppo web avanzato, versionamento, struttura documentazione progetto" data-detail-soft="Leadership personale, responsabilita, orientamento ai risultati" data-detail-role="Studente con approccio professionale" data-detail-results="Obiettivi centrati con miglioramento della qualita e della gestione tempi." data-detail-reflection="Ho capito quanto contino metodo e costanza nella fase finale del percorso.">Dettagli <span class="details-arrow">▾</span></button>
+      </div>
+      <div class="activity-card fade-in-section delay-1">
+        <div class="activity-num">02</div>
+        <h3>Consectetur Adipiscing</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <button class="details-toggle" data-detail-title="Consectetur Adipiscing" data-detail-description="Ho migliorato l'efficacia comunicativa del mio lavoro, curando presentazione, chiarezza e fruibilita dei contenuti." data-detail-tech="UI refinement, accessibilita base, ottimizzazione contenuti" data-detail-soft="Comunicazione efficace, empatia, attenzione all'utente" data-detail-role="Studente comunicatore" data-detail-results="Contenuti piu chiari, fruibili e adatti alla presentazione finale." data-detail-reflection="Presentare bene un progetto e parte integrante del progetto stesso.">Dettagli <span class="details-arrow">▾</span></button>
+      </div>
+      <div class="activity-card fade-in-section delay-2">
+        <div class="activity-num">03</div>
+        <h3>Progetto di Maturità</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <button class="details-toggle" data-detail-title="Progetto di Maturita" data-detail-description="Questa esperienza ha sintetizzato tutto il percorso: analisi, sviluppo, verifica e presentazione finale in modo strutturato." data-detail-tech="Progettazione end-to-end, integrazione contenuti multisezione, testing finale" data-detail-soft="Pensiero critico, resilienza, public speaking" data-detail-role="Studente project owner" data-detail-results="Progetto completo realizzato e presentato con struttura chiara e coerente." data-detail-reflection="Questo progetto mi ha fatto percepire il mio reale livello di crescita.">Dettagli <span class="details-arrow">▾</span></button>
+      </div>
+      <div class="activity-card fade-in-section delay-3">
+        <div class="activity-num">04</div>
+        <h3>Ut Labore Et Dolore</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <button class="details-toggle" data-detail-title="Ut Labore Et Dolore" data-detail-description="Ho gestito attivita complesse in autonomia, bilanciando precisione tecnica e tempi di consegna." data-detail-tech="Risoluzione bug, rifinitura responsive, validazione output finale" data-detail-soft="Autonomia, pianificazione, gestione della pressione" data-detail-role="Studente autonomo avanzato" data-detail-results="Consegna finale rifinita, stabile e rispettosa delle scadenze." data-detail-reflection="Chiudere bene il percorso mi ha dato maggiore fiducia per il futuro.">Dettagli <span class="details-arrow">▾</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAGE -->
+  <section class="stage-section fade-in-section">
+    <div class="stage-inner">
+      <div class="stage-badge">Stage Aziendale</div>
+      <div class="stage-grid">
+        <div class="fade-in-section">
+          <h2>Il secondo anno<br>in <em>azienda</em>.</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+        </div>
+        <div class="stage-details fade-in-section delay-1">
+          <div class="stage-detail-item">
+            <span class="stage-detail-label">Azienda</span>
+            <span class="stage-detail-value">Lorem Ipsum S.r.l.</span>
+          </div>
+          <div class="stage-detail-item">
+            <span class="stage-detail-label">Periodo</span>
+            <span class="stage-detail-value">Giugno — Luglio 2025</span>
+          </div>
+          <div class="stage-detail-item">
+            <span class="stage-detail-label">Durata</span>
+            <span class="stage-detail-value">80 ore</span>
+          </div>
+          <div class="stage-detail-item">
+            <span class="stage-detail-label">Ruolo</span>
+            <span class="stage-detail-value">Lorem Ipsum Developer</span>
+          </div>
+          <div class="stage-detail-item">
+            <span class="stage-detail-label">Tecnologie</span>
+            <span class="stage-detail-value">Lorem, Ipsum, Dolor, Sit</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stage-activities">
+        <div class="stage-activity-card fade-in-section">
+          <div class="sa-icon">◈</div>
+          <h4>Lorem Ipsum</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam purus sit amet luctus.</p>
+        </div>
+        <div class="stage-activity-card fade-in-section delay-1">
+          <div class="sa-icon">⬡</div>
+          <h4>Dolor Sit Amet</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam purus sit amet luctus.</p>
+        </div>
+        <div class="stage-activity-card fade-in-section delay-2">
+          <div class="sa-icon">◎</div>
+          <h4>Consectetur</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam purus sit amet luctus.</p>
+        </div>
+        <div class="stage-activity-card fade-in-section delay-3">
+          <div class="sa-icon">◇</div>
+          <h4>Adipiscing Elit</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam purus sit amet luctus.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MATURITÀ -->
+  <section class="page-section">
+    <div class="section-label fade-in-section">Esame di Maturità</div>
+    <div class="two-col fade-in-section">
+      <div>
+        <h2>Il capitolo<br><em>finale.</em></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+      <div class="maturity-topics fade-in-section delay-1">
+        <h4>Argomenti della tesina</h4>
+        <ul>
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Consectetur adipiscing elit</li>
+          <li>Sed do eiusmod tempor</li>
+          <li>Incididunt ut labore et dolore</li>
+          <li>Magna aliqua ut enim</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="reflection fade-in-section">
+    <blockquote>
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, et enim ad minim veniam quis nostrud exercitation ullamco."
+    </blockquote>
+    <cite>— Riflessione finale, Classe Quinta</cite>
+  </section>
+
+  <section class="page-nav fade-in-section">
+    <a href="quarta.html" class="btn-outline">← Classe Quarta</a>
+    <a href="index.html" class="btn-outline">Torna all'inizio <span class="btn-arrow">→</span></a>
+  </section>
+
+  <div class="details-overlay" id="detailsOverlay" aria-hidden="true">
+    <div class="details-panel" role="dialog" aria-modal="true" aria-labelledby="detailsTitle">
+      <button class="details-close" id="detailsClose" aria-label="Chiudi dettagli">×</button>
+      <h3 id="detailsTitle">Dettagli attività</h3>
+      <p id="detailsDescription"></p>
+      <div class="details-skills">
+        <div class="details-skill-block">
+          <h4>Ruolo</h4>
+          <p id="detailsRole"></p>
+        </div>
+        <div class="details-skill-block">
+          <h4>Risultati</h4>
+          <p id="detailsResults"></p>
+        </div>
+        <div class="details-skill-block">
+          <h4>Competenze tecniche</h4>
+          <p id="detailsTech"></p>
+        </div>
+        <div class="details-skill-block">
+          <h4>Competenze trasversali</h4>
+          <p id="detailsSoft"></p>
+        </div>
+        <div class="details-skill-block details-reflection-block">
+          <h4>Riflessione</h4>
+          <p id="detailsReflection"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-left">© 2025 — Tutti i diritti riservati</div>
+    <div class="footer-right">
+      <a href="#">LinkedIn</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

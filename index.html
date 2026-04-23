@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-logo">Portfolio.</div>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="terza.html">Terza</a>
+      <a href="quarta.html">Quarta</a>
+      <a href="quinta.html">Quinta</a>
+    </div>
+    <div class="nav-contact">
+      <a href="mailto:email@example.com" class="btn-pill btn-glow">Contattami</a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" onclick="toggleMenu()">Home</a>
+    <a href="terza.html" onclick="toggleMenu()">Terza</a>
+    <a href="quarta.html" onclick="toggleMenu()">Quarta</a>
+    <a href="quinta.html" onclick="toggleMenu()">Quinta</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-tag fade-in">✦ Studente &amp; Creativo</div>
+    <h1 class="hero-title fade-in delay-1">
+      Ciao sono<br>
+      <em><span class="animated-name">Riccardo Lannunziata.</span></em>
+    </h1>
+    <p class="hero-sub fade-in delay-2">
+      Studente di informatica dell' istituto tecnico superiore <br> Blaise Pascal a Reggio Emilia.
+    </p>
+    <a href="#about" class="btn-outline fade-in delay-3">Scopri di più <span class="btn-arrow">↓</span></a>
+    <div class="hero-orb"></div>
+  </section>
+
+  <!-- BRANDS / SCUOLA -->
+  <section class="brands fade-in-section">
+    <div class="brands-track">
+      <span>Informatica</span>
+      <span>Sviluppo Web</span>
+      <span>PCTO</span>
+      <span>Stage Aziendale</span>
+      <span>Competenze Tecniche</span>
+      <span>Competenze Trasversali</span>
+      <span>Project Work</span>
+      <span>Portfolio</span>
+    </div>
+    <div class="brands-track" aria-hidden="true">
+      <span>Informatica</span>
+      <span>Sviluppo Web</span>
+      <span>PCTO</span>
+      <span>Stage Aziendale</span>
+      <span>Competenze Tecniche</span>
+      <span>Competenze Trasversali</span>
+      <span>Project Work</span>
+      <span>Portfolio</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-label fade-in-section">About me</div>
+    <div class="about-grid">
+      <div class="about-left fade-in-section">
+        <h2>Il mio approccio...</h2>
+        <p>
+          Sono un ragazzo curioso e ambizioso fin da quando ero piccolino.
+          Soprattutto per quanto riguarda la tecnologia e i computer.
+        </p>
+        <p>
+          Ho cominciato ad approcciarmi un po' più seriamente alla materia dell'informatica in seconda media.
+        </p>
+      </div>
+      <div class="about-right fade-in-section delay-1">
+        <div class="about-photo-slot">
+          <img src="https://framerusercontent.com/images/jYWLYT46QP2IQZvcGWomokY1kc.jpg" alt="Foto profilo" />
+        </div>
+        <a href="terza.html" class="btn-outline">Inizia dal percorso <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills fade-in-section">
+    <div class="skills-label">Competenze</div>
+    <div class="skills-grid">
+      <div class="skill-card fade-in-section">
+        <div class="skill-icon">◈</div>
+        <h3>Design</h3>
+        <p>Progettazione UI/UX per siti web (imparata da solo).</p>
+      </div>
+      <div class="skill-card fade-in-section delay-1">
+        <div class="skill-icon">⬡</div>
+        <h3>Sviluppo Web</h3>
+        <p>Conoscenze approfondite di HTML CSS e JavaScript.</p>
+      </div>
+      <div class="skill-card fade-in-section delay-2">
+        <div class="skill-icon">◎</div>
+        <h3>Comunicazione</h3>
+        <p>Capacità espositiva notevola e carismatica.</p>
+      </div>
+      <div class="skill-card fade-in-section delay-3">
+        <div class="skill-icon">◇</div>
+        <h3>Problem Solving</h3>
+        <p>La mia determinazione fa si che quando mi pongo un obiettivo lo raggiungo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- YEARS NAV -->
+  <section class="years fade-in-section">
+    <div class="years-label">Il percorso</div>
+    <h2>Tre anni,<br><em>tre capitoli.</em></h2>
+    <div class="years-cards">
+      <a href="terza.html" class="year-card fade-in-section">
+        <div class="year-num">III</div>
+        <div class="year-title">Classe Terza</div>
+        <p>Il vero inizio dell'avventura al BUS.</p>
+        <span class="year-arrow">→</span>
+      </a>
+      <a href="quarta.html" class="year-card featured fade-in-section delay-1 btn-glow">
+        <div class="year-num">IV</div>
+        <div class="year-title">Classe Quarta</div>
+        <p>Si procede in media stres.</p>
+        <span class="year-arrow">→</span>
+      </a>
+      <a href="quinta.html" class="year-card fade-in-section delay-2 btn-glow">
+        <div class="year-num">V</div>
+        <div class="year-title">Classe Quinta</div>
+        <p>L'ultimo livello, il traguardo e il nuovo inizio.</p>
+        <span class="year-arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta fade-in-section">
+    <div class="cta-inner">
+      <div class="cta-icon">✉</div>
+      <h2>Hai qualcosa<br>in mente?</h2>
+      <p>Per qualsiasi cosa contattami tramite questi due pulsanti.</p>
+      <div class="cta-buttons">
+        <a href="mailto:email@example.com" class="btn-dark btn-glow">Scrivimi</a>
+        <a href="#" class="btn-outline">LinkedIn <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-left">© 2025 — Tutti i diritti riservati</div>
+    <div class="footer-right">
+      <a href="#">LinkedIn</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
